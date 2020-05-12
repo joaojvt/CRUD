@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>Tem certeza que deseja apagar esse item?</h1>
+<mat-dialog-content>
+    <mat-list>
+        <mat-list-item>
+            Nome: {{product.name}}
+        </mat-list-item>
+        <mat-list-item>
+            Preço: {{product.price}}
+        </mat-list-item>
+    </mat-list>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-raised-button mat-dialog-close (click)="deleteProduct()" color="primary">
+        Apagar
+    </button>
+
+    <button mat-raised-button mat-dialog-close (click)="cancel()">
+        Cancelar
+    </button>
+</mat-dialog-actions>
